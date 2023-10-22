@@ -1,0 +1,55 @@
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    text-transform: none;
+    font-size: 40rem;
+    transition: height .3s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+}
+
+nav ul:focus,
+nav ul:focus-within {
+    height: 100%;
+    pointer-events: none;
+    background-color: #eb3729;
+}
+
+nav ul::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 16px;
+    top: 16px;
+    content: url("/assets/img/more-horizontal.svg");
+    cursor: pointer;
+}
+
+nav ul:focus::after,
+nav ul:focus-within::after {
+    content: url("/assets/img/close.svg");
+}
+
+nav ul li a {
+    color: transparent;
+    transition: color .3s;
+}
+
+nav ul:focus li a,
+nav ul:focus-within li a {
+    color: white;
+    transition: color .3s .3s;
+}
+
+
+nav ul a {
+    pointer-events: all;
+}

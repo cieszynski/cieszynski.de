@@ -2,205 +2,80 @@
 <html lang="de">
 
 <head>
-    <title>CIESZYNSKI.DE</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="robots" content="index nofollow" />
+    <title>Startseite - Cieszynski</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index nofollow">
+    <link rel="stylesheet" href="/assets/main.css" type="text/css">
+    <link rel="stylesheet" href="/assets/mobile.css" type="text/css" media="screen and (max-width: 899px)">
     <style>
-        @font-face {
-            font-family: 'fjallaoneregular';
-            src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
-            font-weight: normal;
-            font-style: normal;
-
+        body::after {
+            color: white;
+            display: inline-block;
+            text-align: center;
+            font-family: "literal";
+            font-size: clamp(17px, 17vw, 170px);
+            content: "cieszynski";
+            position: absolute;
+            height: fit-content;
+            width: 100%;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
         }
 
-        * {
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        nav ul {
+            background-color: transparent;
         }
 
-        *:focus {
-            outline: none;
-        }
-
-        a {
-            color: red;
-            text-decoration: none;
-        }
-
-        header a,
-        footer a {
-            color: #efefef;
-            text-decoration: none;
-            font-family: "fjallaoneregular";
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        body {
-            background-color: #252526;
-            color: #efefef;
-            /* color: #1e1e1e; */
-        }
-
-        h1,
-        h2,
-        h3,
-        p {
-            font-family: sans-serif;
-            margin: .5em 0;
-        }
-
-        ul {
-            padding: 0 0 0 1em;
+        nav ul li:first-of-type a::before {
+            content:""
+/*             content: url("/assets/img/logo.svg");
+            font-size: 0;
+            width: 40px;
+            top: 16px; */
         }
 
         svg {
-            width: 100%;
+            position: relative;
             height: 100%;
-            max-width: 800px;
-            max-height: 800px;
-            transform: scale(0);
-            transition: transform .3s;
+            width: 100%;
+            z-index: -1;
+            left: 0;
+            top: 0;
         }
+    </style>
 
-        main {
-            position: absolute;
-            width: 80vw;
-            height: 80vh;
-            max-width: 800px;
-            max-height: 100vw;
-            transform: scale(1);
-            transition: transform .3s;
-            border: 7px solid #efefef;
-            border-radius: 32px;
-            padding: 16px;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-
-        main:empty {
-            transform: scale(0);
-        }
-
-        main:empty~svg {
-            transition: transform .3s;
-            transform: scale(1);
-        }
-
-        header {
-            font-size: xx-large;
-            display: flex;
-            align-items: center;
-            position: fixed;
-            top: 16px;
-            left: 16px;
-        }
-
-        footer {
-            font-size: medium;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            position: fixed;
-            bottom: 16px;
-            right: 16px;
-        }
-
-        address::after {
-            word-spacing: -.4ch;
-            white-space: pre-wrap;
-            content: "St epha n \00A0 C ie szyn ski \A Immer mann s t r \002E 37 \A 4 1 1 4 7 \00A0 Dort mund \A \002B 4923198225932 \A su p port \0040 c ie szyn ski .d e";
-        }
+    <style media="screen and (max-width: 899px)">
     </style>
 </head>
 
 <body>
-    <main></main>
-
-    <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
-        <defs>
-            <symbol id="hamSymbol" viewBox="0 0 134 134" width="134" height="134">
-                <circle cx="63" cy="63" r="60" fill="#252526" stroke-width="7" />
-                <g fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-dasharray="42 150">
-                    <path d="M 42,42 L 86,42 A 22 22 180 0 1 86,86 L 42,42" />
-                    <path d="M 42,64 L 84,64" />
-                    <path d="M 42,86 L 86,86 A 22 22 180 1 0 86,42 L 42,86" />
-                </g>
-            </symbol>
-
-
-            <symbol id="appSymbol" viewBox="0 0 134 134" width="134" height="134">
-                <circle cx="63" cy="63" r="60" fill="#252526" stroke-width="7" />
-                <g fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M 53,32 L 75,32 A 11 11 180 0 1 86,43 
-                        L 86,86 A 11 11 180 0 1 75,95 
-                        L 53,95 A 11 11 180 0 1 42,86 
-                        L 42,42 A 11 11 180 0 1 53,32" />
-                    <path d="M 60,82 L 68,82" />
-                </g>
-            </symbol>
-        </defs>
-
-        <a xlink:href="#apps">
-            <use id="useAppSymbol" tabindex="-1" xlink:href="#appSymbol" x="333" y="333" stroke="#efefef">
-                <animate id="appAnimOne" attributeName="y" begin="useHamSymbol.click" to="153" dur="0.3s"
-                    fill="freeze" />
-                <animate id="appAnimTwo" attributeName="y" begin="useHamSymbol.blur" to="333" dur="0.3s"
-                    fill="freeze" />
-            </use>
-        </a>
-
-        <use id="useHamSymbol" tabindex="-1" xlink:href="#hamSymbol" x="333" y="333" stroke-dashoffset="0"
-            stroke="#efefef" pointer-events="all">
-            <animate id="hamAnimOne" attributeName="stroke-dashoffset" begin="useHamSymbol.click" to="-123" dur="0.3s"
-                fill="freeze" />
-            <animate id="hamAnimTwo" attributeName="stroke-dashoffset" begin="useHamSymbol.blur" to="0" dur="0.3s"
-                fill="freeze" />
-            <set attributeName="pointer-events" to="none" begin="hamAnimOne.begin" fill="freeze" />
-            <set attributeName="pointer-events" to="all" begin="hamAnimTwo.begin" fill="freeze" />
-        </use>
+    <nav>
+        <ul tabindex="0">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/travel.html">Travel</a>
+            </li>
+            <li>
+                <a href="/impressum.html">Impressum</a>
+            </li>
+        </ul>
+    </nav>
+    <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+        <image href="/assets/img/pic1.jpg" width="1920" height="1080">
+            <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="16s"
+                repeatCount="indefinite" />
+        </image>
+        <image href="/assets/img/pic2.jpg" width="1920" height="1080">
+            <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="15s"
+                repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.45;.5;.95;1" dur="16s"
+                repeatCount="indefinite" />
+        </image>
     </svg>
-    <main></main>
-
-    <header>
-        <a href="/">CIESZYNSKI.DE</a>
-    </header>
-
-    <footer>
-        <a href="#impressum">IMPRESSUM</a>&nbsp;|&nbsp;
-        <a href="#datenschutz">DATENSCHUTZ</a>
-    </footer>
 </body>
-
-<script>
-    "use strict";
-    const main = document.querySelector('main');
-
-    onload = onhashchange = function (e) {
-        if (location.hash) {
-            const xhr = new XMLHttpRequest();
-            xhr.responseType = 'document';
-            xhr.open('GET', location.hash.replace('#', '/').concat('.html'), true);
-            xhr.onload = function (e) { main.innerHTML = this.response.body.innerHTML; }
-            xhr.send();
-        } else {
-            main.innerHTML = "";
-        }
-    }
-</script>
 
 </html>

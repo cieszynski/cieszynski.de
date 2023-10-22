@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "literal";
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/literal.bold-webfont.woff2") format("woff2"), url("/assets/literal.bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "crimson";
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/crimson.roman-webfont.woff2") format("woff2"), url("/assets/crimson.roman-webfont.woff") format("woff");
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+article.teaser {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 32px auto;
+    max-width: 420px;
+}
+
+body {
+    overflow: auto; 
+    background-color: #333;
+    /* */
+    height: 100%;
+}
+
+h1 {
+    color: #eb3729;
+    font-family: "literal";
+    margin-bottom: 8px;
+    font-size: 30rem;
+}
+
+h2 {
+    color: #eb3729;
+    font-family: "literal";
+    margin: 4px 0;
+    font-size: 20rem;
+}
+
+html {
+    overflow: hidden; 
+    font-size: 6.25%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 899px;
+    margin: 64px auto auto auto;
+    padding: 16px;
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav {
+    z-index: 1;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+    pointer-events: all;
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    max-width: 899px;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: "literal";
+    font-size: 20rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 20rem;
+}
+
+nav ul li:first-of-type a::before {
+    color: white;
+    font-family: "literal";
+    font-size: 40px;
+    content: "cieszynski";
+    position: absolute;
+    height: 40px;
+    left: 16px;
+    top: 8px;
+}
+
+p {
+    font-family: "crimson";
+    font-size: 20rem;
+    margin: 4px 0;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
