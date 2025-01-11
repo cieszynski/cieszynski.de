@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Website - Stephan Cieszynski</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style>
+        *,
+        ::after,
+        ::before {
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        @keyframes carousel {
+            5%,
+            20% {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            25% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        .visually-hidden {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            max-width: 840px;
+            margin: auto;
+        }
+
+        body>header {
+            display: flex;
+            flex-wrap: wrap;
+            white-space: nowrap;
+        }
+
+        h1 {
+            margin-right: auto;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        nav {
+            position: relative;
+            border: 1px solid green;
+            aspect-ratio: 16/9;
+        }
+
+        section.carousel {
+            position: absolute;
+            background-size: contain;
+            transition: opacity .3s, visibility .3s;
+            animation: carousel 25s infinite;
+            visibility: hidden;
+            opacity: 0;
+            inset: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="/">Cieszynski</a>
+        </h1>
+        <a href="/">Blog</a>
+        <a href="/">Travel</a>
+    </header>
+    <nav>
+        <section class="carousel" style="animation-delay: 0; background-image: url(/assets/img/pic1.jpg);">
+            <header>
+                <h2>Titel 1</h2>
+            </header>
+        </section>
+        <section class="carousel" style="animation-delay: 5s; background-image: url(/assets/img/pic2.jpg);">
+            <header>
+                <h2>Titel 2</h2>
+            </header>
+        </section>
+        <section class="carousel" style="animation-delay: 10s;">
+            <header>
+                <h2>Titel 3</h2>
+            </header>
+        </section>
+        <section class="carousel" style="animation-delay: 15s;">
+            <header>
+                <h2>Titel 4</h2>
+            </header>
+        </section>
+        <section class="carousel" style="animation-delay: 20s;">
+            <header>
+                <h2>Titel 5</h2>
+            </header>
+        </section>
+
+    </nav>
+    <main>
+        <section>
+            <header>
+                <h2>Übersicht</h2>
+            </header>
+            <a href="/">
+                <h3>Überschrift</h3>
+                <p>Text</p>
+            </a>
+        </section>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>
