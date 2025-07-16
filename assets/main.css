@@ -3,7 +3,7 @@
     font-stretch: normal;
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/literal.bold-webfont.woff2") format("woff2"), url("/assets/literal.bold-webfont.woff") format("woff");
+    src: url("./literal.bold-webfont.woff2") format("woff2"), url("./literal.bold-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-stretch: normal;
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/crimson.roman-webfont.woff2") format("woff2"), url("/assets/crimson.roman-webfont.woff") format("woff");
+    src: url("./crimson.roman-webfont.woff2") format("woff2"), url("./crimson.roman-webfont.woff") format("woff");
 }
 
 *,

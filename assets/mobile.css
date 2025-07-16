@@ -29,13 +29,13 @@ nav ul::after {
     height: 48px;
     right: 16px;
     top: 16px;
-    content: url("/assets/img/more-horizontal.svg");
+    content: url("./assets/img/more-horizontal.svg");
     cursor: pointer;
 }
 
 nav ul:focus::after,
 nav ul:focus-within::after {
-    content: url("/assets/img/close.svg");
+    content: url("./assets/img/close.svg");
 }
 
 nav ul li a {
